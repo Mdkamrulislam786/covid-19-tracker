@@ -10,7 +10,8 @@ body {
 body {
   background-color: #f5f6fa;
 }
-.App{
+
+.App {
   display: flex;
   justify-content: space-evenly;
 }
@@ -27,8 +28,12 @@ body {
   justify-content: space-between;
 }
 
-@media (max-width:990px){
-  .App{
+.app_left {
+  flex: 0.9;
+}
+
+@media (max-width:990px) {
+  .App {
     flex-direction: column;
   }
 }
