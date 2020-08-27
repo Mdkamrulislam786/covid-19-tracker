@@ -16,6 +16,17 @@ body {
   justify-content: space-evenly;
 }
 
+.app_header h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.covid {
+  object-fit: contain;
+  height: 80px;
+}
+
 .app_header {
   display: flex;
   align-items: center;
@@ -62,5 +73,14 @@ body {
 @media (max-width:990px) {
   .App {
     flex-direction: column;
+  }
+
+  .covid {
+    height: 40px;
+  }
+
+  .app_header h1 {
+    font-size: 1.5rem !important;
+    
   }
 }

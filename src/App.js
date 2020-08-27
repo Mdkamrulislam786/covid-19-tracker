@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
+import covid from "./img/COVID-19.png";
 //Components
 import InfoBox from "./Components/InfoBox/InfoBox";
 import Map from "./Components/Map/Map";
 import Table from "./Components/Table/Table";
 import { sortData, prettyPrintStat } from "./util";
 import LineGraph from "./Components/LineGraph/LineGraph";
+
 //MATERIAL UI
 import {
   Card,
@@ -14,8 +16,8 @@ import {
   Select,
   CardContent,
 } from "@material-ui/core";
-//Leaflet
 
+//Leaflet
 import "leaflet/dist/leaflet.css";
 
 function App() {
@@ -25,7 +27,7 @@ function App() {
   const [countryInfo, setCountryInfo] = useState({});
   const [tableData, setTableData] = useState([]);
   const [mapCountries, setMapCountries] = useState([]);
-  const [casesType,setCasesType] = useState("cases")
+  const [casesType, setCasesType] = useState("cases");
 
   //leafletmap peops
   const [mapCenter, setMapCenter] = useState({ lat: 34.9076, lng: -40.4796 });
@@ -85,7 +87,10 @@ function App() {
     <div className="App">
       <div className="app_left">
         <div className="app_header">
-          <h1>COVID-19 TRACKER</h1>
+          <h1>
+            <img src={covid} alt="covid-19" className="covid" />
+            TRACKER
+          </h1>
           <FormControl className="app__dropdown">
             <Select
               variant="outlined"
