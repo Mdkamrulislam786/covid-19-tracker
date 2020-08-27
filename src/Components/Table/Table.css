@@ -17,3 +17,12 @@
 .table tr:nth-of-type(odd) {
     background-color: #f3f2f8;
 }
+
+.table--dark tr:nth-of-type(odd) {
+    background-color: #1c1b1c;
+    color: #fff;
+}
+
+.table--dark td {
+    color: #fff;
+}

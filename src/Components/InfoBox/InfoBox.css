@@ -1,6 +1,26 @@
 .infoBox {
     flex: 1;
     cursor: pointer;
+
+}
+
+/* //dark-mode */
+.infoBox--dark {
+    background-color: #1c1b1c  !important;
+    flex: 1;
+    cursor: pointer;
+}
+.infoBox__total--dark{
+    color: #fff !important;
+    font-weight: 700 !important;
+    font-size: 0.8rem !important;
+    margin-top: 15px !important;
+}
+/* dark-mode-end */
+
+
+.MuiTypography-colorTextSecondary--dark {
+    color: #fff !important;
 }
 
 .infoBox:not(:last-child) {
@@ -23,6 +43,7 @@
     color: #cc1034;
     font-weight: 600;
     font-size: 1.75rem;
+    margin-top: 0.5rem;
     margin-bottom: 0.5rem;
 }
 

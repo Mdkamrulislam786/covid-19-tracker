@@ -52,6 +52,7 @@ body {
   flex-direction: column;
 }
 
+
 .app_right .MuiCardContent-root {
   display: flex;
   flex-direction: column;
@@ -70,6 +71,31 @@ body {
   margin-top: 10px;
 }
 
+/* //dark mode */
+.dark-mode {
+  background-color: #181818;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-evenly;
+  /* #1c1b1c */
+  /* ##0d0d12 */
+}
+
+.app_right--dark {
+  background-color: #181818 !important;
+  color: #ffffff;
+}
+
+.app_right--dark h3 {
+  color: #fff;
+}
+
+.dark-mode-info {
+  background-color: #999 !important;
+  color: #fff !important;
+}
+
+
 @media (max-width:990px) {
   .App {
     flex-direction: column;
@@ -81,6 +107,6 @@ body {
 
   .app_header h1 {
     font-size: 1.5rem !important;
-    
+
   }
 }

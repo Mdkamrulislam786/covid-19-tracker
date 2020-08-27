@@ -2,9 +2,9 @@ import React from "react";
 import "./Table.css";
 import { prettyPrintStat } from "../../util";
 
-const Table = ({ countries }) => {
+const Table = ({ countries,darkMode }) => {
   return (
-    <div className="table">
+    <div className={`table ${darkMode && "table--dark"}`}>
       <table>
         <tbody>
           {countries.map(({ country, cases }, index) => (
